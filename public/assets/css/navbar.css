@@ -1,0 +1,129 @@
+/* 
+:root {
+    --primary-100: #61dafb;
+    --primary-200: #39bcdc;
+    --primary-300: #007997;
+    --accent-100: #ff4081;
+    --accent-200: #ffe4ff;
+    --text-100: #ffffff;
+    --text-200: #e0e0e0;
+    --bg-100: #282c34;
+    --bg-200: #383c44;
+    --bg-300: #50555e;
+}
+ */
+
+nav .container {
+    padding: 0.5rem 0px;
+    padding-right: 2rem;
+    display: flex;
+    background-color: var(--bg-300);
+}
+
+nav .container > :nth-child(1) {
+    margin-left: 1rem;
+    font-weight: bold;
+    background-color: var(--primary-300);
+    border-radius: 5px 5px;
+}
+
+nav .container > :nth-child(2) {
+    margin-left: 4rem;
+}
+
+nav .container > :nth-child(3) {
+    margin-right: auto;
+}
+
+nav .container a img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+nav a {
+    color: var(--text-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: 1px;
+    padding: 0.2rem 1rem;
+    margin-left: 0.5rem;
+}
+
+nav .container :not(:first-child):hover {
+    color: var(--primary-100);
+    background-color: var(--bg-100);
+    border-radius: 5px 5px;
+}
+
+.active {
+    color: var(--primary-100);
+    background-color: var(--bg-100);
+    border-radius: 5px 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    overflow: hidden;
+    margin-top: 3.3rem;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.profil-sub-menu {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    padding: 0px 1rem;
+    height: 20rem;
+    background-color: var(--bg-300);
+    margin-top: 1rem;
+    border-radius: 5px 5px;
+}
+
+.profil-sub-menu p {
+    color: var(--text-100);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.profil-sub-menu a {
+    justify-content: left;
+    margin: 0.2rem 0px;
+}
+
+.profil-sub-menu a:hover {
+    color: var(--primary-100);
+    background-color: var(--bg-100);
+    border-radius: 5px 5px;
+}
+
+.gambar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gambar img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.hidden {
+    display: none;
+}
