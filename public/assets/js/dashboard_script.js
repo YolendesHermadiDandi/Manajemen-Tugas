@@ -8,6 +8,8 @@ $(".profil").on("click", (e) => {
 });
 
 //klik dluar modal
-profil_modal.on("click", (e) => {
-    profil_modal.css("display", "none");
+$(document).on("click", (e) => {
+    if (e.target.className === "modal") {
+        profil_modal.css("display", "none");
+    }
 });

@@ -11,7 +11,7 @@
 
 <body>
     @include('partials.navbar')
-    <div class="container">
+    <div class="main-container">
         @yield('container')
     </div>
     <script src="{{ asset('assets\js\jquery-3.7.0.js') }}"></script>
